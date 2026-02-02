@@ -1,0 +1,77 @@
+<div class="game-wrap">
+
+  <header class="top">
+
+    <h1>Jogo da Velha — Rosa Choque</h1>
+
+    <div class="controls">
+
+      <div class="scoreboard">
+
+        <div>Você: <span id="player-score">0</span></div>
+
+        <div>PC: <span id="ai-score">0</span></div>
+
+        <div>Empates: <span id="ties">0</span></div>
+
+      </div>
+
+      <div class="buttons">
+
+        <button id="restart">Reiniciar partida</button>
+
+        <label class="switch">
+
+          <input type="checkbox" id="ai-first">
+
+          <span>PC começa</span>
+
+        </label>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div id="status" class="status">Sua vez — marque um X!</div>
+
+    <div id="board" class="board" role="grid">
+
+      <!-- 9 células -->
+
+      <button class="cell" data-index="0"></button>
+
+      <button class="cell" data-index="1"></button>
+
+      <button class="cell" data-index="2"></button>
+
+      <button class="cell" data-index="3"></button>
+
+      <button class="cell" data-index="4"></button>
+
+      <button class="cell" data-index="5"></button>
+
+      <button class="cell" data-index="6"></button>
+
+      <button class="cell" data-index="7"></button>
+
+      <button class="cell" data-index="8"></button>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+
+    <small>Tema: rosa choque • IA imbatível (Minimax). Boa sorte! 💗</small>
+
+  </footer>
+
+</div>
+
+<!-- container para corações animados -->
+
+<div id="hearts-container" aria-hidden="true"></div>
